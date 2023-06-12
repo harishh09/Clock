@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="stopwatch.css">
+
+</head>
+<body>
+    <div class="outercontainer">
+        <div class="menu">
+        <nav>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stopwatch.html">Stopwatch</a></li>
+                <li><a href="timer.html">Timer</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>Stopwatch</h2>
+        </div>
+        <div class="outer-wrapper">
+            <div class="clock">
+                <div class="wrapper">
+                    <div class="main">
+                        <div class="hour">
+                            <p class="number" id="hour">00</p>
+                            <p>hours</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="min">
+                            <p class="number" id="min">00</p>
+                            <p>minutes</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="sec">
+                            <p class="number" id="sec">00</p>
+                            <p>seconds</p>
+                        </div>
+                        <p class="colon">:</p>
+                        <div class="count">
+                            <p class="number" id="count">00</p>
+                            <p>milliseconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btns" id="start">Start</button>
+                <button class="btns" id="stop">Stop</button>
+                <button class="btns" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js' integrity='sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==' crossorigin='anonymous'></script>
+    <script src="menu.js"></script>
+    <script src="stopwatch.js"></script>
+</body>
+</html>
